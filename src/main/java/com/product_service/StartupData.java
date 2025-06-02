@@ -30,7 +30,8 @@ public class StartupData {
 		            new Product(null, "Samsung 55 Inch TV", "Samsung 4K UHD TV", 599.99, 25, "Electronics"),
 		            new Product(null, "Apple Watch Series 7", "GPS Apple Watch", 399.99, 60, "Accessories"),
 		            new Product(null, "Fitbit Charge 5", "Health and Fitness Tracker", 149.99, 80, "Accessories"),
-		            new Product(null, "Lenovo ThinkPad", "ThinkPad with Intel i5", 849.99, 15, "Computers")
+		            new Product(null, "Lenovo ThinkPad", "ThinkPad with Intel i5", 849.99, 15, "Computers"),
+		            new Product(null, "Lenovo ThinkPad2", "ThinkPad with Intel i7", 949.99, 15, "Computers")
 		        );
 
 		// Output product list
