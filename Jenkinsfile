@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKER_IMAGE = "your-dockerhub-username/product-service"
-        MYSQL_URL = "jdbc:mysql://mysql:3306/productdb"
+        MYSQL_URL = "jdbc:mysql://mysql:3307/productdb"
         EUREKA_URL = "http://eureka-server:8761/eureka"
     }
 
