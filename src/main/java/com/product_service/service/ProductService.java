@@ -1,6 +1,7 @@
 package com.product_service.service;
 
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.stereotype.Service;
@@ -33,6 +34,10 @@ public class ProductService {
 	public Optional<Product> getProductById(Long id) {
 		log.info("allProduct");
         return productRepository.findById(id);
+    }
+	
+	public List<Product> getAllProducts() {
+        return productRepository.findAll();
     }
 	
 
