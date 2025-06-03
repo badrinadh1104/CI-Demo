@@ -31,6 +31,7 @@ public class ProductService {
 	}
 	
 	public Optional<Product> getProductById(Long id) {
+		log.info("allProduct");
         return productRepository.findById(id);
     }
 	
