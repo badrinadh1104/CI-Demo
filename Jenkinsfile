@@ -1,8 +1,8 @@
 pipeline {
-    agent any
+   
 
     environment {
-        DOCKER_IMAGE = "badrinadh1104/product-service"
+        
         MYSQL_URL = "jdbc:mysql://mysql:3307/productdb"
         EUREKA_URL = "http://eureka-server:8761/eureka"
     }
