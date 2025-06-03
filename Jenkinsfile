@@ -1,11 +1,5 @@
 pipeline {
-   
-
-    environment {
-        
-        MYSQL_URL = "jdbc:mysql://mysql:3307/productdb"
-        EUREKA_URL = "http://eureka-server:8761/eureka"
-    }
+    agent any
 
     stages {
         stage('Checkout') {
@@ -19,15 +13,5 @@ pipeline {
                 sh 'mvn clean test'
             }
         }
-
-        stage('Build App') {
-            steps {
-                sh 'mvn clean package'
-            }
-        }
-
-       
-
-        
     }
 }
