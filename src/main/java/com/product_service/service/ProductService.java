@@ -1,6 +1,8 @@
 package com.product_service.service;
 
 
+import java.util.Optional;
+
 import org.springframework.stereotype.Service;
 
 import com.product_service.Model.Product;
@@ -27,6 +29,10 @@ public class ProductService {
 		return "product added";
 		
 	}
+	
+	public Optional<Product> getProductById(Long id) {
+        return productRepository.findById(id);
+    }
 	
 
 }
