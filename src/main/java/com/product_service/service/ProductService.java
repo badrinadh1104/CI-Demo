@@ -21,9 +21,12 @@ public class ProductService {
 	}
 
 	public String Addproduct(Product product) {
+		log.info("in method");
 		productRepository.save(product);
 		log.info("Product added");
 		return "product added";
+		
 	}
+	
 
 }
